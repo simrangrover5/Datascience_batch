@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            #l1{
+                color: blanchedalmond;
+                font-size: 30px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #l2{
+                color: cadetblue;
+                font-size: 40px;
+                font-style: italic;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            div{
+                margin-left: 300px;
+            }
+        </style>
+    </head>
+    <body style="background-color: black;">
+        {% for key,value in data.items() %}
+            <label id="l1">{{ key }}</label> : <label id="l2">{{value}}</label><br>
+        {% endfor %}
+        <div>
+        <img src={{ poster }}>
+        </div>
+    </body>
+</html>
